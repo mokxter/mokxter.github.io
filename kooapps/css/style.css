@@ -1,21 +1,25 @@
 /* Put your CSS here */
 .ember-application {
+	width: 978px;
+	margin: 0 auto;
 }
 
-.navbar {
-	margin: 0.5px -15px;
-}
 
 body {
 	padding-top: 78px;
 }
 
+.container { 
+  width: 978px;
+}
+
 .navbar {
   position: fixed;
-  width: 100%;
-  margin: 0;
+  width: 978px;
+  margin: 0 auto;
+  z-index: 2;
   height: 78px;
-  background: rgba(0, 0, 0, 0);
+  background: white;
 
   border: none; }
   .navbar .active > a, .navbar .navbar-nav > li > a {
@@ -24,5 +28,6 @@ body {
     color: black; }
 
 .navbar-header > a {
+
   	padding: 29px;
 }
