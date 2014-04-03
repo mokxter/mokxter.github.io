@@ -3,21 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+   
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    
   </head>
   <body>
     <script type="text/x-handlebars">
-      <h2>What the fuck</h2>
-      <h5>{{#link-to 'helloworld'}}Go to helloworld.{{/link-to}}</h5>
-      {{outlet}}
+      <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header navbar-left"><a class="navbar-brand" href="#">Kooapps</a></div>
+          <div class="nav navbar-right">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container content">
+        {{outlet}}
+      </div>
+    </script>
+
+    <script type="text/x-handlebars" id="index">
+      <section class="header">
+        <div class="intro">
+          <div class="container">
+            <h2>This is something that is very long. Lalalala. Hehe. And needs to be changed.</h2>
+          </div>
+        </div>
+      </section>
     </script>
 
     <script type="text/x-handlebars" id="helloworld">

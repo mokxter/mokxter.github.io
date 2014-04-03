@@ -1,4 +1,28 @@
 /* Put your CSS here */
 .ember-application {
-    margin: 20px;
+}
+
+.navbar {
+	margin: 0.5px -15px;
+}
+
+body {
+	padding-top: 78px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  height: 78px;
+  background: rgba(0, 0, 0, 0);
+
+  border: none; }
+  .navbar .active > a, .navbar .navbar-nav > li > a {
+    padding: 29px;}
+  .navbar .active > a:hover, .navbar .navbar-nav > li > a:hover {
+    color: black; }
+
+.navbar-header > a {
+  	padding: 29px;
 }
