@@ -23,7 +23,7 @@
               <li><a href="#">Games</a></li>
               <li><a href="#">News</a></li>
               <li><a href="#">Support</a></li>
-              <li><a href="#">About</a></li>
+              <li>{{#link-to "about"}}About{{/link-to}}</li>
             </ul>
           </div>
         </div>
@@ -89,6 +89,13 @@
           </div>
         </div>
       </section>
+    </script>
+
+    <script type="text/x-handlebars" id="about">
+      <div class="page-header">
+        <h1>About <small>us</small></h1>
+      </div>
+
     </script>
 
     <script type="text/x-handlebars" id="helloworld">
