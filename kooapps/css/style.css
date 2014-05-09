@@ -25,7 +25,7 @@ body {
   margin: 0 auto;
   z-index: 2;
   height: 78px;
-  background: white;
+  background: #25E3FF;
 
   border: none; }
   .navbar .active > a, .navbar .navbar-nav > li > a {
@@ -35,5 +35,4 @@ body {
 
 .navbar-header > a {
 
-  	padding: 29px;
 }
