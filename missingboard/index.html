@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+
     <script type="text/x-handlebars">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
             <div class="container">
@@ -32,6 +33,7 @@
         </nav>
         {{outlet}}
     </script>
+
     <script type="text/x-handlebars" data-template-name="reports/new">
         <form role="form" id="report-form">
             <div class="form-group">
@@ -49,14 +51,17 @@
             <button {{action "publishReport" }} class="btn btn-primary btn-block">Submit</button>
         </form>
     </script>
-    <script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
+
     <script src="js/libs/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/collapse.js"></script>
-    <script src="bower_components/emberfire/dist/emberfire.js"></script>
     <script src="js/libs/handlebars-1.1.2.js"></script>
     <script src="js/libs/ember-1.6.0.js"></script>
     <script src="bower_components/ember-data/ember-data.min.js"></script>
+
+    <script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
+    <script src="bower_components/emberfire/dist/emberfire.js"></script>
+
     <script src="js/app.js"></script>
     <!-- to activate the test runner, add the "?test" query string parameter -->
     <script src="tests/runner.js"></script>

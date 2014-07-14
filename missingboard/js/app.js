@@ -1,7 +1,6 @@
 App = Ember.Application.create();
 
 App.Router.map(function() {
-    // put your routes here
     this.resource('reports', {path: '/reports' }, function() {
         this.route('new');
     });
@@ -43,22 +42,25 @@ App.ReportsNewController = Ember.ObjectController.extend({
     },
     reportIsValid: function() {
         var isValid = true;
-        ['report.name', 'post.age', 'post.lastSeen'].forEach(function(field) {
-            if (this.get(field) ===- '') {
+        ['report.name', 'report.age', 'report.lastSeen'].forEach(function(field) {
+            if (this.get(field) === '') {
                 isValid = false;
             }
         },this);
     },
     actions: {
         publishReport: function() {
-            if (!this.reportIsValid()) { return; }
+            if (!this.reportIsValid()) {
+            console.log("Damn this fucking firebase code");
+            }
+            console.log("Fuck");
             var newReport = this.store.createRecord('report', {
                 name: this.get('report.name'),
                 age: this.get('report.age'),
                 published: new Date().getTime(),
                 lastSeen: this.get('report.lastSeen'),
             });
-            newPost.save();
+            newReport.save();
             this.setProperties({
                 'report.name': '',
                 'report.age': '',
@@ -69,4 +71,3 @@ App.ReportsNewController = Ember.ObjectController.extend({
     },
     report: undefined
 });
-
