@@ -8,7 +8,7 @@ App.Router.map(function() {
 
 App.Router.reopen({
     rootURL: '/missingboard/',
-    location: 'history'
+    //location: 'history'
 });
 
 App.ApplicationAdapter = DS.FirebaseAdapter.extend({
