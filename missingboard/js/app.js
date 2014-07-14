@@ -52,13 +52,15 @@ App.ReportsNewController = Ember.ObjectController.extend({
                 isValid = false;
             }
         },this);
+        return isValid;
     },
     actions: {
         publishReport: function() {
             if (!this.reportIsValid()) {
-            console.log("Damn this fucking firebase code");
+                console.log("Error: Fields are invalid");
+                return;
             }
-            console.log("Fuck");
+            console.log("Processing request");
             var newReport = this.store.createRecord('report', {
                 name: this.get('report.name'),
                 age: this.get('report.age'),
