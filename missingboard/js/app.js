@@ -7,7 +7,7 @@ App.Router.map(function() {
 });
 
 App.Router.reopen({
-    rootURL: '/missingboard/',
+    //rootURL: '/missingboard/',
     //location: 'history'
 });
 
