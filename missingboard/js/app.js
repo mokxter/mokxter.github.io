@@ -6,6 +6,10 @@ App.Router.map(function() {
     });
 });
 
+App.Router.reopen({
+    location: 'history'
+});
+
 App.ApplicationAdapter = DS.FirebaseAdapter.extend({
     firebase: new Firebase("https://torid-fire-3496.firebaseio.com")
 });
