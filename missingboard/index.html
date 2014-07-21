@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Ember Starter Kit</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <script type="text/x-handlebars">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Missing Board</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link</a></li>
+                        <li><a href="/">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        {{outlet}}
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="reports/new">
+        <form role="form" id="report-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                {{ input value=report.name class="form-control" id="name" placeholder="name of the missing person" }}
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                {{ input value=report.age class="form-control" id="age" placeholder="age of the missing person" }}
+            </div>
+            <div class="form-group">
+                <label for="last-seen">Last seen</label>
+                {{ input value=report.lastSeen class="form-control" id="last-seen" placeholder="last seen" }}
+            </div>
+            <button {{action "publishReport" }} class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </script>
+
+    <script src="js/libs/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/collapse.js"></script>
+    <script src="js/libs/handlebars-1.1.2.js"></script>
+    <script src="js/libs/ember-1.6.0.js"></script>
+    <script src="bower_components/ember-data/ember-data.min.js"></script>
+
+    <script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
+    <script src="bower_components/emberfire/dist/emberfire.js"></script>
+
+    <script src="js/app.js"></script>
+    <!-- to activate the test runner, add the "?test" query string parameter -->
+    <script src="tests/runner.js"></script>
+</body>
+</html>
