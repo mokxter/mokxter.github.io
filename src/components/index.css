@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Scope+One');
+
+* {
+  font-family: serif;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ebebeb;
+}
+
+header {
+  height: 100vh;
+}
+
+.info-flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  margin: 5px auto;
+  font-family: 'Scope One';
+}
+
+header h4 {
+  margin: 10px auto 20px;
+  font-family: 'Scope One';
+}
+
