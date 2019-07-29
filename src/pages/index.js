@@ -22,7 +22,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <header>
     <div className="info-flex">
-      <SEO title="Ian Buena | Mokxter" />
+      <SEO title="Ian Buena" />
       <h1>Ian Cristopher Buena</h1>
       <h4>Goals transform a random walk into a chase.</h4>
     </div> 

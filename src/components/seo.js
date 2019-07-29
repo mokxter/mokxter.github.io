@@ -69,7 +69,7 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet" media="none" onload="if(media!='all')media='all'" />
     </Helmet>
   )
 }
